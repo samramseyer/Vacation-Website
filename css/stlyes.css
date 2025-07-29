@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: aqua;
+  height: 100vh;
+  background-image: url("Images/lake dock view.jpg/cabin by lake.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
