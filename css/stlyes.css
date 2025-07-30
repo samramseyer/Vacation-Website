@@ -3,11 +3,119 @@
   padding: 0;
 }
 
+html {
+  font-size: 24px;
+}
+
 body {
-  color: aqua;
-  height: 100vh;
-  background-image: url("Images/lake dock view.jpg/cabin by lake.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  color: rgba(0, 0, 0, 0.062);
+  background-color: rgb(32, 94, 45);
+  background-image: ="Images/lake dock view.jpg" width="95%" height="95%"
+  color: white;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;S
+  margin: 15px;
+  width: auto;
+}
+
+.logo {
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  overflow: auto;
+}
+
+.index-image {
+  
+
+}
+
+.nav-link {
+  margin-right: 40px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.logo-header{
+  width: 15%;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(5, 5, 5);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-content {
+  max-width: 100%;
+}
+
+p {
+  color: black;
+  text-align: center;
+  margin: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+input,
+textarea {
+  width: 50%;
+  padding: 12px 20px;
+}
+
+[type="submit"] {
+  background-color: rgb(32, 94, 92);
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 3px 3px 0px rgba(255, 255, 255, 5);
+  box-sizing: content-box;
+  font-size: 1rem;
+}
+
+[type="submit"]:hover {
+  background-color: black;
+}
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.appform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(241, 227, 188);
+  font-size: 16px;
 }
