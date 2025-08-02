@@ -81,6 +81,32 @@ body {
   top: 100px;
 }
 
+.table {
+  border: 5;
+  border-color: white;
+  align-content: center;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+.td {
+  display: flex;
+  margin: auto;
+  align-items: left;
+  justify-content: left;
+}
+
+.booknow-sign {
+  background-image: url(../Images/booknow-sign.png);
+  width: 30%;
+  margin: auto;
+  justify-content: right;
+  top: 1000;
+  right: 1500;
+}
+
 .nav-link {
   margin-right: 40px;
   text-decoration: none;
@@ -154,13 +180,14 @@ p {
 
 .form-row {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   margin: 10px 0;
+  position: relative;
 }
 
 input,
 textarea {
-  width: 50%;
+  width: 40%;
   padding: 12px 20px;
 }
 
