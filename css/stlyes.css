@@ -8,14 +8,8 @@ html {
 }
 
 body {
-  color: rgba(0, 0, 0, 0.062);
   background-color: rgb(32, 94, 45);
   color: white;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  margin: 15px;
-  width: auto;
 }
 
 .logo {
@@ -26,59 +20,156 @@ body {
 }
 
 .navbar {
+  min-height: 70px;
   display: flex;
-  justify-content: flex-end;
-  align-items: right;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar-menu {
+.nav-menu {
   list-style: none;
   display: flex;
-  justify-content: flex-end;
-  align-items: right;
-  overflow: auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  transition: 0, 7s ease;
+  margin-right: 20px;
+  text-decoration: none;
+  color: azure;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 40px;
+  height: 5px;
+  background-color: rgb(252, 253, 252);
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: rgb(32, 94, 45);
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger .active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    background-color: rgb(32, 94, 45);
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
 }
 
 .cabin {
-  width: 20%;
-  margin: auto;
-  position: relative;
-  top: 100px;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-right: 2;
 }
 
-.shower {
-  width: 20%;
+.cabin-by-lake {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  width: 60%;
+  height: auto;
   margin: auto;
-  position: relative;
-  top: 100px;
-}
-
-.boat {
-  width: 20%;
-  margin: auto;
-  position: relative;
-  top: 100px;
+  border-radius: 7%;
 }
 
 .hottub {
-  width: 20%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  width: 60%;
+  height: auto;
   margin: auto;
-  position: relative;
-  top: 100px;
+  border-radius: 7%;
+}
+
+.shower {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin: auto;
+}
+
+.boat {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  width: 60%;
+  height: auto;
+  margin: auto;
 }
 
 .sidebyside {
-  width: 14.5%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  width: 60%;
+  height: auto;
   margin: auto;
-  position: relative;
-  top: 100px;
 }
 
 .index-image {
-  width: 65%;
+  display: flex;
+  width: 60%;
+  height: auto;
   margin: auto;
-  position: relative;
-  top: 100px;
+  border-radius: 7%;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.contact-us-form {
+  align-content: center;
+  margin: 5%;
 }
 
 .table {
@@ -86,8 +177,7 @@ body {
   border-color: white;
   align-content: center;
   width: 100%;
-  margin: auto;
-  position: relative;
+  margin: 5%;
   top: 100px;
 }
 
@@ -107,14 +197,9 @@ body {
   right: 1500;
 }
 
-.nav-link {
-  margin-right: 40px;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-
 .logo-header {
-  width: 15%;
+  width: 50%;
+  margin: 2%;
 }
 
 h1,
@@ -129,9 +214,9 @@ h3 {
 h1 {
   color: rgb(251, 250, 250);
   position: relative;
-  top: 200px;
-  justify-content: right;
-  text-align: right;
+  top: 25px;
+  justify-content: center;
+  text-align: center;
 }
 
 h2 {

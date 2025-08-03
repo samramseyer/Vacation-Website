@@ -9,27 +9,41 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul class="navbar-menu">
-          <li class="nav-link"><a href="index.html">Home</a></li>
-          <li class="nav-link"><a href="About_Us.html">About Us</a></li>
-          <li class="nav-link">
-            <a href="Our_Accomations.html">Our Accomodations</a>
+        <a href="index.html"
+          ><img
+            src="Images/lakeside-cabins-logo.png"
+            alt="Logo"
+            class="logo-header"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
           </li>
-          <li class="nav-link"><a href="Book_Now.html">Book Now</a></li>
-          <li class="nav-link"><a href="Contact_Us.html">Contact Us</a></li>
+          <li class="nav-item">
+            <a href="About_Us.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="Our_Accomations.html" class="nav-link"
+              >Our Accomodations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="Book_Now.html" class="nav-link">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contact_Us.html" class="nav-link">Contact Us</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
-      <img
-        src="Images/lakeside-cabins-logo.png"
-        class="logo-header"
-        alt="Logo"
-      />
     </header>
-    <form>
+    <h1>Book Now</h1>
+    <form action="https://formspree.io/f/xqaldwvy" method="post">
       <table class="table">
-        <tr>
-          <th>Book Now</th>
-        </tr>
         <tr>
           <td class="data">
             <label for="fname">First name:</label><br /><input
@@ -114,5 +128,6 @@
     </form>
 
     <footer><p>Copyright Lakeside Cabins</p></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

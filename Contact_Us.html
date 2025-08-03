@@ -9,25 +9,49 @@
   <body>
     <header>
       <nav class="navbar">
-        <ul class="navbar-menu">
-          <li class="nav-link"><a href="index.html">Home</a></li>
-          <li class="nav-link"><a href="About_Us.html">About Us</a></li>
-          <li class="nav-link">
-            <a href="Our_Accomations.html">Our Accomodations</a>
+        <a href="index.html"
+          ><img
+            src="Images/lakeside-cabins-logo.png"
+            alt="Logo"
+            class="logo-header"
+        /></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
           </li>
-          <li class="nav-link"><a href="Book_Now.html">Book Now</a></li>
-          <li class="nav-link"><a href="Contact_Us.html">Contact Us</a></li>
+          <li class="nav-item">
+            <a href="About_Us.html" class="nav-link">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="Our_Accomations.html" class="nav-link"
+              >Our Accomodations</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="Book_Now.html" class="nav-link">Book Now</a>
+          </li>
+          <li class="nav-item">
+            <a href="Contact_Us.html" class="nav-link">Contact Us</a>
+          </li>
         </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
       </nav>
     </header>
-    <img src="Images/lakeside-cabins-logo.png" class="logo-header" alt="Logo" />
     <h5>Contact Us</h5>
     <p>
       Please fill out our basic information and one of our skilled associates
       will be contacting you with in the next 24 hours or you can contact us at
-      ###-###-####.
+      641-242-3159.
     </p>
-    <form>
+    <form
+      action="https://formspree.io/f/xpwljkgv"
+      method="post"
+      class="contact-us-form"
+    >
       <label for="fname">First name:</label><br />
       <input type="text" id="fname" name="fname" /><br />
       <label for="lname">Last name:</label><br />
@@ -39,8 +63,9 @@
       <label for="Address">Address:</label><br />
       <input type="text" id="Address" name="Address" /><br />
       <label for="Submit">submit:</label><br />
-      <input type="Submit" id="Submit" name="submit" />/><br />
+      <input type="Submit" id="Submit" name="submit" /><br />
     </form>
     <footer><p>Copyright Lakeside Cabins</p></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
