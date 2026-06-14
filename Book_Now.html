@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Book your stay at Lakeside Cabins. Reserve your secluded lakeside retreat today."
+      content="Book your stay at Lakeside Cabins. Reserve your secluded, all-inclusive lakeside retreat today."
     />
     <link rel="stylesheet" href="css/stlyes.css" />
     <title>Book Now | Lakeside Cabins</title>
@@ -46,101 +46,221 @@
     </header>
 
     <main>
-      <div class="container container--narrow">
-        <div class="page-header">
-          <h1>Book Now</h1>
-          <p>
-            Fill out the form below and we'll confirm your reservation within 24
-            hours.
-          </p>
+      <section class="page-hero">
+        <img
+          src="Images/lake-dock-view.jpg"
+          class="page-hero-image"
+          alt="Serene lake view with a wooden dock"
+        />
+        <div class="page-hero-content">
+          <h1>Book Your Stay</h1>
+          <p>Your lakeside retreat is just a few clicks away.</p>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="booking-steps">
+          <div class="booking-step">
+            <span class="booking-step-number">1</span>
+            <h3>Fill Out the Form</h3>
+            <p>Tell us your dates and contact info</p>
+          </div>
+          <div class="booking-step">
+            <span class="booking-step-number">2</span>
+            <h3>We Confirm</h3>
+            <p>Response within 24 hours</p>
+          </div>
+          <div class="booking-step">
+            <span class="booking-step-number">3</span>
+            <h3>Enjoy Your Retreat</h3>
+            <p>Everything is ready when you arrive</p>
+          </div>
         </div>
 
-        <form
-          class="form-section"
-          action="https://formspree.io/f/xqaldwvy"
-          method="post"
-          id="booking-form"
-        >
-          <div class="form-row-2">
-            <div class="form-group">
-              <label for="fname">First Name</label>
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                required
-                autocomplete="given-name"
-              />
+        <div class="booking-layout">
+          <div class="booking-form-card">
+            <form
+              class="form-section"
+              action="https://formspree.io/f/xqaldwvy"
+              method="post"
+              id="booking-form"
+            >
+              <h2 class="form-section-heading">Your Details</h2>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="fname">First Name</label>
+                  <input
+                    type="text"
+                    id="fname"
+                    name="fname"
+                    required
+                    autocomplete="given-name"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last Name</label>
+                  <input
+                    type="text"
+                    id="lname"
+                    name="lname"
+                    required
+                    autocomplete="family-name"
+                    placeholder="Smith"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  autocomplete="tel"
+                  placeholder="(555) 555-5555"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  id="address"
+                  name="address"
+                  autocomplete="street-address"
+                  placeholder="123 Main St, City, State"
+                />
+              </div>
+
+              <h2 class="form-section-heading">Your Stay</h2>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="check-in">Check In</label>
+                  <input type="date" id="check-in" name="check-in" required />
+                </div>
+                <div class="form-group">
+                  <label for="check-out">Check Out</label>
+                  <input type="date" id="check-out" name="check-out" required />
+                  <span class="form-error" id="date-error"></span>
+                </div>
+              </div>
+
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="guests">Number of Guests</label>
+                  <select id="guests" name="guests" required>
+                    <option value="" disabled selected>Select guests</option>
+                    <option value="1">1 Guest</option>
+                    <option value="2">2 Guests</option>
+                    <option value="3">3 Guests</option>
+                    <option value="4">4 Guests</option>
+                    <option value="5">5 Guests</option>
+                    <option value="6">6 Guests</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="cabin-preference">Cabin Preference</label>
+                  <select id="cabin-preference" name="cabin-preference">
+                    <option value="any">No Preference</option>
+                    <option value="waterfront">Waterfront View</option>
+                    <option value="wooded">Wooded &amp; Secluded</option>
+                    <option value="accessible">Easier Access</option>
+                  </select>
+                  <span class="form-hint">We'll do our best to match your request</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Special Requests</label>
+                <textarea
+                  id="notes"
+                  name="notes"
+                  rows="3"
+                  placeholder="Anniversary trip, early check-in, dietary needs, etc."
+                ></textarea>
+              </div>
+
+              <input type="hidden" id="estimated-total" name="estimated-total" value="" />
+              <input type="hidden" id="nights-count" name="nights" value="" />
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">
+                  Submit Reservation
+                </button>
+                <span class="form-hint"
+                  >No payment required now — we'll confirm availability first.</span
+                >
+              </div>
+            </form>
+          </div>
+
+          <aside class="booking-sidebar">
+            <div class="summary-card">
+              <h2>Stay Summary</h2>
+
+              <div id="summary-content">
+                <p class="summary-placeholder">
+                  Select your check-in and check-out dates to see an estimate.
+                </p>
+              </div>
+
+              <div class="summary-divider"></div>
+
+              <ul class="summary-includes">
+                <li>Private cabin &amp; dock</li>
+                <li>Motorized fishing boat</li>
+                <li>Side-by-side &amp; fishing gear</li>
+                <li>Hot tub &amp; welcome wine</li>
+              </ul>
+
+              <p class="summary-note">
+                All amenities included — no hidden fees or equipment rentals.
+              </p>
+
+              <p class="summary-contact">
+                Questions?
+                <a href="tel:+16412423159">641-242-3159</a>
+              </p>
             </div>
-            <div class="form-group">
-              <label for="lname">Last Name</label>
-              <input
-                type="text"
-                id="lname"
-                name="lname"
-                required
-                autocomplete="family-name"
-              />
-            </div>
-          </div>
+          </aside>
+        </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              autocomplete="email"
-            />
+        <div class="trust-badges">
+          <div class="trust-badge">
+            <span class="trust-badge-icon" aria-hidden="true">⏱️</span>
+            <span>24-hour confirmation</span>
           </div>
-
-          <div class="form-group">
-            <label for="phone">Phone Number</label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-              autocomplete="tel"
-            />
+          <div class="trust-badge">
+            <span class="trust-badge-icon" aria-hidden="true">💰</span>
+            <span>All-inclusive pricing</span>
           </div>
-
-          <div class="form-group">
-            <label for="address">Address</label>
-            <input
-              type="text"
-              id="address"
-              name="address"
-              autocomplete="street-address"
-            />
+          <div class="trust-badge">
+            <span class="trust-badge-icon" aria-hidden="true">🌲</span>
+            <span>15 secluded cabins</span>
           </div>
-
-          <div class="form-row-2">
-            <div class="form-group">
-              <label for="check-in">Check In</label>
-              <input
-                type="date"
-                id="check-in"
-                name="check-in"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="check-out">Check Out</label>
-              <input
-                type="date"
-                id="check-out"
-                name="check-out"
-                required
-              />
-            </div>
+          <div class="trust-badge">
+            <span class="trust-badge-icon" aria-hidden="true">📋</span>
+            <span>
+              <a href="Our_Accomations.html">View full pricing guide</a>
+            </span>
           </div>
-
-          <div class="form-group">
-            <input type="submit" value="Submit Reservation" />
-          </div>
-        </form>
+        </div>
       </div>
     </main>
 

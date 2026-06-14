@@ -810,9 +810,255 @@ main {
   margin-top: 0.5rem;
 }
 
+.form-group .btn {
+  margin-top: 0.5rem;
+  border: none;
+}
+
 .form-group input[type="submit"]:hover,
 .form-group button[type="submit"]:hover {
   background: var(--color-gold-light);
+}
+
+.form-section-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  color: var(--color-gold-light);
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-section-heading:first-of-type {
+  margin-top: 0;
+}
+
+.form-hint {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: rgba(248, 246, 240, 0.55);
+}
+
+.form-error {
+  display: none;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  color: #f5a9a9;
+}
+
+.form-error.visible {
+  display: block;
+}
+
+.form-group input.invalid,
+.form-group select.invalid {
+  border-color: #c75050;
+}
+
+/* Booking page */
+
+.booking-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 3rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.booking-step {
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.booking-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: var(--color-gold);
+  color: var(--color-forest-dark);
+  font-weight: 700;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.booking-step h3 {
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.booking-step p {
+  font-size: 0.8rem;
+  margin: 0 auto;
+}
+
+.booking-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.booking-form-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.booking-form-card .form-section {
+  max-width: none;
+  margin: 0;
+}
+
+.booking-sidebar {
+  position: sticky;
+  top: 90px;
+}
+
+.summary-card {
+  background: var(--color-forest-dark);
+  border: 1px solid rgba(201, 168, 76, 0.35);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.summary-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+  text-align: center;
+}
+
+.summary-includes {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.summary-includes li {
+  padding: 0.4rem 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.summary-includes li::before {
+  content: "✓ ";
+  color: var(--color-gold);
+  font-weight: 700;
+}
+
+.summary-includes li:last-child {
+  border-bottom: none;
+}
+
+.summary-divider {
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 1.25rem 0;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.summary-line--total {
+  font-family: "Playfair Display", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin-top: 0.75rem;
+}
+
+.summary-placeholder {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(248, 246, 240, 0.5);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+.summary-note {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  text-align: center;
+}
+
+.summary-contact {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.summary-contact a {
+  color: var(--color-gold-light);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.summary-contact a:hover {
+  text-decoration: underline;
+}
+
+.trust-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius);
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.trust-badge-icon {
+  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 900px) {
+  .booking-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-sidebar {
+    position: static;
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .booking-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-form-card {
+    padding: 1.25rem;
+  }
 }
 
 .contact-details {
