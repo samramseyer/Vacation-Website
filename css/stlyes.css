@@ -469,6 +469,10 @@ main {
   margin-top: 1rem;
 }
 
+#pricing {
+  scroll-margin-top: 90px;
+}
+
 .included-list {
   list-style: none;
   display: grid;
@@ -1080,6 +1084,153 @@ main {
 
 .contact-details a:hover {
   text-decoration: underline;
+}
+
+/* Contact page */
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 2.5rem;
+  align-items: start;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.contact-form-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.contact-form-card .form-section {
+  max-width: none;
+  margin: 0;
+}
+
+.contact-sidebar {
+  position: sticky;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.info-card {
+  background: var(--color-forest-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.info-card--highlight {
+  border-color: rgba(201, 168, 76, 0.35);
+  background: rgba(201, 168, 76, 0.08);
+}
+
+.info-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.info-item:first-of-type {
+  padding-top: 0;
+}
+
+.info-icon {
+  font-size: 1.35rem;
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+.info-item-content strong {
+  display: block;
+  color: var(--color-cream);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+}
+
+.info-item-content p,
+.info-item-content a {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  text-decoration: none;
+}
+
+.info-item-content a {
+  color: var(--color-gold-light);
+  font-weight: 600;
+}
+
+.info-item-content a:hover {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
+
+.quick-links {
+  list-style: none;
+}
+
+.quick-links li {
+  margin-bottom: 0.5rem;
+}
+
+.quick-links li:last-child {
+  margin-bottom: 0;
+}
+
+.quick-links a {
+  display: block;
+  padding: 0.65rem 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  color: var(--color-cream);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.quick-links a:hover {
+  background: rgba(201, 168, 76, 0.2);
+  color: var(--color-gold-light);
+}
+
+.contact-faq {
+  max-width: var(--max-width);
+  margin: 3.5rem auto 0;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-sidebar {
+    position: static;
+    order: -1;
+  }
+
+  .contact-form-card {
+    padding: 1.25rem;
+  }
 }
 
 /* Page hero (inner pages) */
