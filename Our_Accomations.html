@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore Lakeside Cabins accommodations — all-inclusive lakeside retreats with boats, hot tubs, and no hidden fees."
+    />
     <link rel="stylesheet" href="css/stlyes.css" />
-    <title>Lakeside Cabins</title>
+    <title>Accommodations | Lakeside Cabins</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html"
-          ><img
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">
+          <img
             src="Images/lakeside-cabins-logo.png"
-            alt="Logo"
+            alt="Lakeside Cabins"
             class="logo-header"
-        /></a>
+          />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -23,9 +28,7 @@
             <a href="About_Us.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="Our_Accomations.html" class="nav-link"
-              >Our Accomodations</a
-            >
+            <a href="Our_Accomations.html" class="nav-link">Accommodations</a>
           </li>
           <li class="nav-item">
             <a href="Book_Now.html" class="nav-link">Book Now</a>
@@ -34,34 +37,378 @@
             <a href="Contact_Us.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </button>
       </nav>
     </header>
 
-    <h2>Our Accomodations</h2>
+    <main>
+      <section class="page-hero">
+        <img
+          src="Images/hottub.jpg"
+          class="page-hero-image"
+          alt="Hot tub on a patio overlooking a serene lake"
+        />
+        <div class="page-hero-content">
+          <h1>Our Accommodations</h1>
+          <p>One price. Everything included. No surprises.</p>
+        </div>
+      </section>
 
-    <p>
-      Here at Lakeside Cabins we believe that seeking a retreat should not be
-      stressful or completely break the bank so for every cabin rental there is
-      a small motorized fishing boat parked at the dock, a side by side in the
-      garage, and a complimentary bottle of wine in the fridge all included in
-      your package. We feel like vacations would be a lot more enjoyable if you
-      new how much it is going to cost without all the additional hidden fees
-      and thats why fishing polls and a small tackle set are in the garage as
-      well. Our goal is that if you pick Lakeside Cabins as your choice for a
-      retreat we are not going to nickel and dime you every step of the way for
-      we feel that takes all the fun out of the retreat. Here you pay one price
-      and it's all included. Our Cabins come with basic internet,TV, tile
-      shower, small kitchen, fireplace, and of course a hot tub on your patio
-      overlooking the lake!
-    </p>
-    <img src="Images/hottub.jpg" class="hottub" alt="hottub" /> <br />
+      <div class="container container--flush-top">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">All-Inclusive</span>
+            <span class="stat-label">One Upfront Price</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">From $169</span>
+            <span class="stat-label">Per Night</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15</span>
+            <span class="stat-label">Private Cabins</span>
+          </div>
+        </div>
 
-    <footer><p>Copyright Lakeside Cabins</p></footer>
+        <div class="pull-quote">
+          <blockquote>
+            Vacations should be enjoyable — not a guessing game of hidden fees.
+            Here, you pay one price and it's all included.
+          </blockquote>
+        </div>
+
+        <section class="story-section">
+          <h2>Every Cabin Includes</h2>
+          <p>
+            Each of our 15 secluded cabins comes fully equipped for a
+            stress-free lakeside getaway. None are visible from another — your
+            retreat is truly your own.
+          </p>
+        </section>
+
+        <div class="cabin-specs">
+          <article class="cabin-spec">
+            <div class="cabin-spec-icon" aria-hidden="true">🔥</div>
+            <h3>Fireplace</h3>
+            <p>Cozy evenings by the fire</p>
+          </article>
+          <article class="cabin-spec">
+            <div class="cabin-spec-icon" aria-hidden="true">🍳</div>
+            <h3>Small Kitchen</h3>
+            <p>Cook meals at your own pace</p>
+          </article>
+          <article class="cabin-spec">
+            <div class="cabin-spec-icon" aria-hidden="true">🚿</div>
+            <h3>Tile Shower</h3>
+            <p>Modern bathroom amenities</p>
+          </article>
+          <article class="cabin-spec">
+            <div class="cabin-spec-icon" aria-hidden="true">📶</div>
+            <h3>Internet &amp; TV</h3>
+            <p>Stay connected if you want to</p>
+          </article>
+          <article class="cabin-spec">
+            <div class="cabin-spec-icon" aria-hidden="true">♨️</div>
+            <h3>Hot Tub</h3>
+            <p>Private patio overlooking the lake</p>
+          </article>
+          <article class="cabin-spec">
+            <div class="cabin-spec-icon" aria-hidden="true">🍷</div>
+            <h3>Welcome Wine</h3>
+            <p>Complimentary bottle in the fridge</p>
+          </article>
+        </div>
+
+        <div class="section-title">
+          <h2>Lakeside Cabins vs. Typical Resorts</h2>
+          <p>See why our guests keep coming back.</p>
+        </div>
+
+        <div class="compare-grid">
+          <div class="compare-column compare-column--ours">
+            <h3>At Lakeside Cabins</h3>
+            <ul class="compare-list compare-list--ours">
+              <li>Boat, side-by-side &amp; fishing gear included</li>
+              <li>Hot tub on your private patio</li>
+              <li>One upfront price — no add-ons</li>
+              <li>15 cabins hidden in nature</li>
+              <li>Complimentary bottle of wine</li>
+            </ul>
+          </div>
+          <div class="compare-column compare-column--others">
+            <h3>At Typical Resorts</h3>
+            <ul class="compare-list compare-list--others">
+              <li>Boat &amp; equipment rentals extra</li>
+              <li>Shared pools and crowded spaces</li>
+              <li>Resort fees, parking fees, extras</li>
+              <li>Rooms stacked side by side</li>
+              <li>Minibar charges and upsells</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <section class="values-section">
+        <div class="container">
+          <section class="amenity-category">
+            <div class="amenity-category-header">
+              <span class="amenity-category-icon" aria-hidden="true">🏠</span>
+              <h2>Inside Your Cabin</h2>
+            </div>
+            <div class="amenity-grid">
+              <article class="amenity-card">
+                <img
+                  src="Images/cabin-interior.jpg"
+                  alt="Warm and cozy cabin interior with fireplace"
+                />
+                <div class="amenity-card-body">
+                  <h3>Cozy Living Space</h3>
+                  <p>
+                    Fireplace, comfortable seating, and a relaxed atmosphere to
+                    unwind after a day on the lake.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+              <article class="amenity-card">
+                <img
+                  src="Images/shower.jpg"
+                  alt="Modern tile shower in the cabin bathroom"
+                />
+                <div class="amenity-card-body">
+                  <h3>Tile Shower</h3>
+                  <p>
+                    Clean, modern bathroom with a tile shower — because roughing
+                    it shouldn't mean sacrificing comfort.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="amenity-category">
+            <div class="amenity-category-header">
+              <span class="amenity-category-icon" aria-hidden="true">🌊</span>
+              <h2>On the Water</h2>
+            </div>
+            <div class="amenity-grid">
+              <article class="amenity-card">
+                <img
+                  src="Images/lake-dock-view.jpg"
+                  alt="Peaceful lake view from a private dock"
+                />
+                <div class="amenity-card-body">
+                  <h3>Private Dock</h3>
+                  <p>
+                    Your own slice of the lake — no sharing, no crowds, just
+                    open water and quiet mornings.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+              <article class="amenity-card">
+                <img
+                  src="Images/boat.jpg"
+                  alt="Motorized fishing boat docked at the lake"
+                />
+                <div class="amenity-card-body">
+                  <h3>Fishing Boat</h3>
+                  <p>
+                    A small motorized fishing boat parked at your dock, ready
+                    whenever you are.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+              <article class="amenity-card">
+                <img
+                  src="Images/hottub.jpg"
+                  alt="Hot tub on a patio overlooking the lake"
+                />
+                <div class="amenity-card-body">
+                  <h3>Lakefront Hot Tub</h3>
+                  <p>
+                    Soak under the stars with a private hot tub on your patio
+                    overlooking the water.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="amenity-category">
+            <div class="amenity-category-header">
+              <span class="amenity-category-icon" aria-hidden="true">🏕️</span>
+              <h2>Explore &amp; Adventure</h2>
+            </div>
+            <div class="amenity-grid">
+              <article class="amenity-card">
+                <img
+                  src="Images/sidebyside.png"
+                  alt="Side-by-side utility vehicle for trail exploration"
+                />
+                <div class="amenity-card-body">
+                  <h3>Side-by-Side</h3>
+                  <p>
+                    A side-by-side parked in your garage — explore the property
+                    and surrounding trails at your own pace.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+              <article class="amenity-card">
+                <img
+                  src="Images/cabin-by-lake.jpg"
+                  alt="Cabin hidden among trees beside the lake"
+                />
+                <div class="amenity-card-body">
+                  <h3>Fishing Gear</h3>
+                  <p>
+                    Fishing poles and a small tackle set waiting in the garage
+                    — no need to pack your own or rent equipment.
+                  </p>
+                  <span class="amenity-tag">Included</span>
+                </div>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="section-title">
+          <h2>Pricing Guide</h2>
+          <p>Transparent seasonal rates — every amenity above is included.</p>
+        </div>
+
+        <div class="pricing-cards">
+          <article class="pricing-card">
+            <p class="pricing-card-season">Off-Season</p>
+            <p class="pricing-card-price">$169<span>/night</span></p>
+            <p class="pricing-card-detail">Nov – Mar · 2-night minimum</p>
+            <p class="pricing-card-includes">All amenities included</p>
+          </article>
+          <article class="pricing-card pricing-card--featured">
+            <span class="pricing-card-badge">Most Popular</span>
+            <p class="pricing-card-season">Shoulder Season</p>
+            <p class="pricing-card-price">$219<span>/night</span></p>
+            <p class="pricing-card-detail">Apr – May, Sep – Oct · 2-night min</p>
+            <p class="pricing-card-includes">All amenities included</p>
+          </article>
+          <article class="pricing-card">
+            <p class="pricing-card-season">Peak Season</p>
+            <p class="pricing-card-price">$289<span>/night</span></p>
+            <p class="pricing-card-detail">Jun – Aug · 3-night minimum</p>
+            <p class="pricing-card-includes">All amenities included</p>
+          </article>
+        </div>
+
+        <div class="pricing-table-wrapper">
+          <table class="pricing-table">
+            <thead>
+              <tr>
+                <th>Season</th>
+                <th>Per Night</th>
+                <th>Minimum Stay</th>
+                <th>Includes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Peak (Jun – Aug)</td>
+                <td>$289</td>
+                <td>3 nights</td>
+                <td>Everything listed above</td>
+              </tr>
+              <tr>
+                <td>Shoulder (Apr – May, Sep – Oct)</td>
+                <td>$219</td>
+                <td>2 nights</td>
+                <td>Everything listed above</td>
+              </tr>
+              <tr>
+                <td>Off-Season (Nov – Mar)</td>
+                <td>$169</td>
+                <td>2 nights</td>
+                <td>Everything listed above</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="pricing-note">
+          No resort fees. No equipment rentals. No surprises — ever.
+        </p>
+
+        <section class="faq-section">
+          <div class="section-title">
+            <h2>Common Questions</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>Is the boat really included?</summary>
+              <p>
+                Yes. Every cabin rental includes a small motorized fishing boat
+                at your private dock, plus fishing poles and a tackle set in
+                the garage. No rental fees, no deposits.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Are there any hidden fees?</summary>
+              <p>
+                No. We don't believe in nickel-and-diming guests. The price you
+                see covers the cabin, boat, side-by-side, hot tub, fishing gear,
+                welcome wine, and all listed amenities.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>How private are the cabins?</summary>
+              <p>
+                All 15 cabins are hidden behind trees on separate parcels of
+                land. None are visible from another, so you get true seclusion
+                on the water.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>What's the minimum stay?</summary>
+              <p>
+                Peak season (June – August) requires a 3-night minimum.
+                Shoulder and off-season stays require a 2-night minimum.
+              </p>
+            </details>
+          </div>
+        </section>
+
+        <div class="cta-banner">
+          <h2>Find Your Perfect Retreat</h2>
+          <p>
+            Pick your dates, pack light, and leave the rest to us. Your cabin,
+            boat, and hot tub are waiting.
+          </p>
+          <div class="btn-group">
+            <a href="Book_Now.html" class="btn btn-primary">Reserve Your Cabin</a>
+            <a href="Contact_Us.html" class="btn btn-secondary">Ask a Question</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Lakeside Cabins. All rights reserved.</p>
+        <ul class="footer-nav">
+          <li><a href="About_Us.html">About</a></li>
+          <li><a href="Our_Accomations.html">Accommodations</a></li>
+          <li><a href="Book_Now.html">Book Now</a></li>
+          <li><a href="Contact_Us.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn the story behind Lakeside Cabins — a family-owned lakeside retreat passed down through generations."
+    />
     <link rel="stylesheet" href="css/stlyes.css" />
-    <title>Lakeside Cabins</title>
+    <title>About Us | Lakeside Cabins</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html"
-          ><img
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">
+          <img
             src="Images/lakeside-cabins-logo.png"
-            alt="Logo"
+            alt="Lakeside Cabins"
             class="logo-header"
-        /></a>
+          />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -23,9 +28,7 @@
             <a href="About_Us.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="Our_Accomations.html" class="nav-link"
-              >Our Accomodations</a
-            >
+            <a href="Our_Accomations.html" class="nav-link">Accommodations</a>
           </li>
           <li class="nav-item">
             <a href="Book_Now.html" class="nav-link">Book Now</a>
@@ -34,40 +37,205 @@
             <a href="Contact_Us.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </button>
       </nav>
     </header>
-    <h3>About Us</h3>
-    <p>
-      We are a family owned and operated company where we believe that life can
-      pull us away from everything that is truly important to us. Family,
-      friends, lovers, and even ourselves. We feel like it is so easy to get
-      caught up in the everyday grind of life that we forget to live and spend
-      time on ourselves and loved ones. So we created lakeside cabins with
-      people in mind. Our Great Grandparents left us a rundown cabin by a lake
-      in the 1980s when they passed. When we went to check it out at first we
-      were overwhelmed with the work it needed. When we told our friends and
-      family about it they thought we should all pitch in to fix it up as a
-      retreat/vacation spot. So we all chipped in financially and started taking
-      turns enjoying my Great grandparents old cabin then one day we said "hey
-      we are not using this all the time lets make it available when we are not
-      using it. The next thing we knew we were struggling to make room in our
-      schedules to visit so we started buying land and adding cabins every few
-      acres hidden behind trees to keep the nature feel and now here we are
-      today with 15 cabins none visible from another and thinking about adding
-      more.
-    </p>
 
-    <img
-      src="Images/cabin-by-lake.jpg"
-      class="cabin-by-lake"
-      alt="cabin-by-lake"
-    />
-    <footer><p>Copyright Lakeside Cabins</p></footer>
+    <main>
+      <section class="page-hero">
+        <img
+          src="Images/cabin-by-lake.jpg"
+          class="page-hero-image"
+          alt="A cozy cabin nestled beside a calm lake"
+        />
+        <div class="page-hero-content">
+          <h1>Our Story</h1>
+          <p>A family legacy of rest, nature, and togetherness.</p>
+        </div>
+      </section>
+
+      <div class="container container--flush-top">
+        <div class="stats-bar">
+          <div class="stat-item">
+            <span class="stat-number">15</span>
+            <span class="stat-label">Secluded Cabins</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1980s</span>
+            <span class="stat-label">Family Legacy</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Family Owned</span>
+          </div>
+        </div>
+
+        <div class="pull-quote">
+          <blockquote>
+            We believe life pulls us away from what truly matters — family,
+            friends, and time for ourselves. Lakeside Cabins exists to bring
+            that back.
+          </blockquote>
+        </div>
+
+        <section class="story-section story-section--reverse">
+          <div>
+            <h2>Why We Exist</h2>
+            <p>
+              We are a family owned and operated company built on a simple
+              belief: the everyday grind shouldn't keep you from the people and
+              moments that matter most. It's easy to forget to live — to really
+              spend time with loved ones and with yourself.
+            </p>
+            <p>
+              Lakeside Cabins was created with people in mind — not as a business
+              first, but as a place where families, friends, and couples can
+              unplug and reconnect.
+            </p>
+          </div>
+          <img
+            src="Images/lake-dock-view.jpg"
+            alt="Peaceful lake view from a wooden dock at sunset"
+          />
+        </section>
+
+        <section class="story-section">
+          <h2>How It Started</h2>
+          <p>
+            Our great grandparents left us a rundown cabin by a lake in the
+            1980s when they passed. When we first went to see it, the work ahead
+            felt overwhelming. But when we told friends and family, they didn't
+            hesitate — everyone pitched in financially and with their own two
+            hands to restore it as a shared retreat.
+          </p>
+          <p>
+            We started taking turns enjoying the cabin, and something special
+            happened: it became the place we all looked forward to most. That
+            old lakeside cabin — once nearly forgotten — became the heart of
+            our family.
+          </p>
+        </section>
+
+        <div class="about-gallery" aria-label="Photos of Lakeside Cabins">
+          <img
+            src="Images/cabin-by-lake.jpg"
+            alt="Exterior of a cabin beside the lake"
+          />
+          <img
+            src="Images/cabin-interior.jpg"
+            alt="Warm and inviting cabin interior with fireplace"
+          />
+          <img
+            src="Images/hottub.jpg"
+            alt="Hot tub on a patio overlooking the water"
+          />
+        </div>
+
+        <section class="story-section">
+          <h2>Our Journey</h2>
+          <div class="timeline">
+            <article class="timeline-item">
+              <span class="timeline-year">1980s</span>
+              <h3>The Original Cabin</h3>
+              <p>
+                Great grandparents pass down a rundown lakeside cabin — the
+                seed of everything that followed.
+              </p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">Restoration</span>
+              <h3>Family Comes Together</h3>
+              <p>
+                Friends and family chip in to restore the cabin into a shared
+                retreat everyone could enjoy.
+              </p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">Sharing</span>
+              <h3>Opening Our Doors</h3>
+              <p>
+                When we weren't using the cabin, we made it available to others
+                — and demand quickly grew.
+              </p>
+            </article>
+            <article class="timeline-item">
+              <span class="timeline-year">Today</span>
+              <h3>15 Hidden Cabins</h3>
+              <p>
+                We added cabins every few acres, hidden behind trees. None are
+                visible from another — and we're still growing.
+              </p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section class="values-section">
+        <div class="container">
+          <div class="section-title">
+            <h2>What We Stand For</h2>
+          </div>
+          <div class="values-grid">
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">🌲</div>
+              <h3>Nature First</h3>
+              <p>
+                Every cabin is tucked behind trees to preserve the wild,
+                peaceful feel of the lake.
+              </p>
+            </article>
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">🤝</div>
+              <h3>No Hidden Fees</h3>
+              <p>
+                One upfront price covers everything — because a retreat
+                shouldn't come with surprises.
+              </p>
+            </article>
+            <article class="value-card">
+              <div class="value-icon" aria-hidden="true">❤️</div>
+              <h3>Family at Heart</h3>
+              <p>
+                Still family owned and operated — every guest is treated like
+                part of the family.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="cta-banner">
+          <h2>Ready to Write Your Own Story?</h2>
+          <p>
+            Pick a cabin, pick your dates, and leave the rest to us. Your
+            lakeside retreat is waiting.
+          </p>
+          <div class="btn-group">
+            <a href="Book_Now.html" class="btn btn-primary">Book Your Stay</a>
+            <a href="Our_Accomations.html" class="btn btn-secondary"
+              >View Accommodations</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Lakeside Cabins. All rights reserved.</p>
+        <ul class="footer-nav">
+          <li><a href="About_Us.html">About</a></li>
+          <li><a href="Our_Accomations.html">Accommodations</a></li>
+          <li><a href="Book_Now.html">Book Now</a></li>
+          <li><a href="Contact_Us.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book your stay at Lakeside Cabins. Reserve your secluded lakeside retreat today."
+    />
     <link rel="stylesheet" href="css/stlyes.css" />
-    <title>Lakeside Cabins</title>
+    <title>Book Now | Lakeside Cabins</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html"
-          ><img
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">
+          <img
             src="Images/lakeside-cabins-logo.png"
-            alt="Logo"
+            alt="Lakeside Cabins"
             class="logo-header"
-        /></a>
+          />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -23,9 +28,7 @@
             <a href="About_Us.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="Our_Accomations.html" class="nav-link"
-              >Our Accomodations</a
-            >
+            <a href="Our_Accomations.html" class="nav-link">Accommodations</a>
           </li>
           <li class="nav-item">
             <a href="Book_Now.html" class="nav-link">Book Now</a>
@@ -34,100 +37,124 @@
             <a href="Contact_Us.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </button>
       </nav>
     </header>
-    <h1>Book Now</h1>
-    <form action="https://formspree.io/f/xqaldwvy" method="post">
-      <table class="table">
-        <tr>
-          <td class="data">
-            <label for="fname">First name:</label><br /><input
-              type="text"
-              id="fname"
-              name="fname"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="data">
-            <label for="lname">Last name:</label><br /><input
-              type="text"
-              id="lname"
-              name="lname"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="data">
-            <label for="Email">Email:</label><br /><input
-              type="text"
-              id="Email"
-              name="Email"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="data">
-            <label for="Phone-Number">Phone Number:</label><br /><input
-              type="text"
-              id="Phone-Number"
-              name="Phone-Number"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="data">
-            <label for="Address">Address:</label><br /><input
-              type="text"
-              id="Address"
-              name="Address"
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="data">
-            Check In:
-            <br /><input
-              type="date"
-              id="Check-In"
-              name="Check-In"
-              value="2025-07-29"
-              min="2025-01-01"
-              max="2025-12-31"
-              required
-            />
-          </td>
-        </tr>
-        <tr>
-          <td class="data">
-            Check Out:
-            <br /><input
-              type="date"
-              id="Check-Out"
-              name="Check-Out"
-              value="2025-07-29"
-              min="2025-01-01"
-              max="2025-12-31"
-              required
-            />
-          </td>
-        </tr>
 
-        <tr>
-          <td class="data">
-            Submit<br />
-            <input type="submit" />
-          </td>
-        </tr>
-      </table>
-    </form>
+    <main>
+      <div class="container container--narrow">
+        <div class="page-header">
+          <h1>Book Now</h1>
+          <p>
+            Fill out the form below and we'll confirm your reservation within 24
+            hours.
+          </p>
+        </div>
 
-    <footer><p>Copyright Lakeside Cabins</p></footer>
+        <form
+          class="form-section"
+          action="https://formspree.io/f/xqaldwvy"
+          method="post"
+          id="booking-form"
+        >
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                required
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                required
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              autocomplete="street-address"
+            />
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="check-in">Check In</label>
+              <input
+                type="date"
+                id="check-in"
+                name="check-in"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="check-out">Check Out</label>
+              <input
+                type="date"
+                id="check-out"
+                name="check-out"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="Submit Reservation" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Lakeside Cabins. All rights reserved.</p>
+        <ul class="footer-nav">
+          <li><a href="About_Us.html">About</a></li>
+          <li><a href="Our_Accomations.html">Accommodations</a></li>
+          <li><a href="Book_Now.html">Book Now</a></li>
+          <li><a href="Contact_Us.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

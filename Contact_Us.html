@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact Lakeside Cabins — reach out by phone or form and we'll respond within 24 hours."
+    />
     <link rel="stylesheet" href="css/stlyes.css" />
-    <title>Lakeside Cabins</title>
+    <title>Contact Us | Lakeside Cabins</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html"
-          ><img
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">
+          <img
             src="Images/lakeside-cabins-logo.png"
-            alt="Logo"
+            alt="Lakeside Cabins"
             class="logo-header"
-        /></a>
+          />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -23,9 +28,7 @@
             <a href="About_Us.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="Our_Accomations.html" class="nav-link"
-              >Our Accomodations</a
-            >
+            <a href="Our_Accomations.html" class="nav-link">Accommodations</a>
           </li>
           <li class="nav-item">
             <a href="Book_Now.html" class="nav-link">Book Now</a>
@@ -34,38 +37,119 @@
             <a href="Contact_Us.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </button>
       </nav>
     </header>
-    <h5>Contact Us</h5>
-    <p>
-      Please fill out our basic information and one of our skilled associates
-      will be contacting you with in the next 24 hours or you can contact us at
-      641-242-3159.
-    </p>
-    <form
-      action="https://formspree.io/f/xpwljkgv"
-      method="post"
-      class="contact-us-form"
-    >
-      <label for="fname">First name:</label><br />
-      <input type="text" id="fname" name="fname" /><br />
-      <label for="lname">Last name:</label><br />
-      <input type="text" id="lname" name="lname" /><br />
-      <label for="Email">Email:</label><br />
-      <input type="text" id="Email" name="Email" /><br />
-      <label for="Phone-Number">Phone Number:</label><br />
-      <input type="text" id="Phone-Number" name="Phone-Number" /><br />
-      <label for="Address">Address:</label><br />
-      <input type="text" id="Address" name="Address" /><br />
-      <label for="Submit">submit:</label><br />
-      <input type="Submit" id="Submit" name="submit" /><br />
-    </form>
-    <footer><p>Copyright Lakeside Cabins</p></footer>
+
+    <main>
+      <div class="container container--narrow">
+        <div class="page-header">
+          <h1>Contact Us</h1>
+          <p>
+            Have a question? Fill out the form below or give us a call — we'll
+            get back to you within 24 hours.
+          </p>
+        </div>
+
+        <ul class="contact-details">
+          <li>
+            Phone:
+            <a href="tel:+16412423159">641-242-3159</a>
+          </li>
+          <li>Hours: Mon – Sat, 9 AM – 6 PM</li>
+        </ul>
+
+        <form
+          class="form-section contact-us-form"
+          action="https://formspree.io/f/xpwljkgv"
+          method="post"
+        >
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                required
+                autocomplete="given-name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input
+                type="text"
+                id="lname"
+                name="lname"
+                required
+                autocomplete="family-name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              autocomplete="tel"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              autocomplete="street-address"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="How can we help you?"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <input type="submit" value="Send Message" />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Lakeside Cabins. All rights reserved.</p>
+        <ul class="footer-nav">
+          <li><a href="About_Us.html">About</a></li>
+          <li><a href="Our_Accomations.html">Accommodations</a></li>
+          <li><a href="Book_Now.html">Book Now</a></li>
+          <li><a href="Contact_Us.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>

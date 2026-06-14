@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lakeside Cabins — a peaceful lakeside retreat where modern amenities meet nature. Book your secluded cabin getaway today."
+    />
     <link rel="stylesheet" href="css/stlyes.css" />
-    <title>Lakeside Cabins</title>
+    <title>Lakeside Cabins | Lakeside Retreat</title>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <a href="index.html"
-          ><img
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="index.html">
+          <img
             src="Images/lakeside-cabins-logo.png"
-            alt="Logo"
+            alt="Lakeside Cabins"
             class="logo-header"
-        /></a>
+          />
+        </a>
         <ul class="nav-menu">
           <li class="nav-item">
             <a href="index.html" class="nav-link">Home</a>
@@ -23,9 +28,7 @@
             <a href="About_Us.html" class="nav-link">About Us</a>
           </li>
           <li class="nav-item">
-            <a href="Our_Accomations.html" class="nav-link"
-              >Our Accomodations</a
-            >
+            <a href="Our_Accomations.html" class="nav-link">Accommodations</a>
           </li>
           <li class="nav-item">
             <a href="Book_Now.html" class="nav-link">Book Now</a>
@@ -34,27 +37,87 @@
             <a href="Contact_Us.html" class="nav-link">Contact Us</a>
           </li>
         </ul>
-        <div class="hamburger">
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+        </button>
       </nav>
     </header>
-    <p>
-      Here at Lakeside Cabins we know life and people can drive you nuts so we
-      offer a peaceful retreat where modern amenities meets nature in a blissful
-      peaceful retreat in total seclusion for you and your family or friends.
-      Click our accommodations if you would like to know more!
-    </p>
 
-    <img
-      src="Images/lake-dock-view.jpg"
-      class="index-image"
-      alt="index-image"
-    />
-    <h1>Serenity is Calling</h1>
-    <footer><p>Copyright Lakeside Cabins</p></footer>
+    <main>
+      <section class="hero">
+        <img
+          src="Images/lake-dock-view.jpg"
+          class="hero-image"
+          alt="Serene lake view with a wooden dock at sunset"
+        />
+        <div class="hero-content">
+          <h1>Serenity is Calling</h1>
+          <p>
+            Escape the everyday grind. Unwind in a secluded lakeside cabin where
+            modern comfort meets untouched nature.
+          </p>
+          <div class="btn-group">
+            <a href="Our_Accomations.html" class="btn btn-primary"
+              >View Accommodations</a
+            >
+            <a href="Book_Now.html" class="btn btn-secondary">Book Now</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <p class="intro-text">
+          Here at Lakeside Cabins we know life can drive you nuts — so we offer
+          a peaceful retreat where modern amenities meet nature in total
+          seclusion for you, your family, or friends.
+        </p>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🏡</div>
+              <h3>15 Secluded Cabins</h3>
+              <p>
+                Each cabin is hidden behind trees — none visible from another —
+                so you get true privacy on the water.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🎣</div>
+              <h3>All-Inclusive Stay</h3>
+              <p>
+                Boat, side-by-side, fishing gear, and a complimentary bottle of
+                wine — all included in one upfront price.
+              </p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon" aria-hidden="true">👨‍👩‍👧‍👦</div>
+              <h3>Family Owned</h3>
+              <p>
+                A family-run retreat born from our great-grandparents' lakeside
+                cabin, built with love and care since the 1980s.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Lakeside Cabins. All rights reserved.</p>
+        <ul class="footer-nav">
+          <li><a href="About_Us.html">About</a></li>
+          <li><a href="Our_Accomations.html">Accommodations</a></li>
+          <li><a href="Book_Now.html">Book Now</a></li>
+          <li><a href="Contact_Us.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
